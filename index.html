@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    var aLocate = $('#aboutPage').offset().top;
+    var bLocate = $('#skillPage').offset().top;
+    var cLocate = $('#contactPage').offset().top;
+    $('#aboutBtn').click(function(){
+        $(window).scrollTop(aLocate);
+    });
+    $('#skillBtn').click(function(){
+        $(window).scrollTop(bLocate);
+    });
+    $('#contactBtn').click(function(){
+        $(window).scrollTop(cLocate);
+    });
+    </script>
+    <title>portfolio.MatsudaYoshiki</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="container">
+          <h1>Yoshiki Matsuda</h1>
+          <p>Engineer</p>
+        </div>
+      </header>
+      <!-- menu -->
+      <div class="menu-wrapper">
+        <div class="container">
+          <div class="menu">
+            <ul>
+              <li><a href="#aboutPage" id="aboutBtn">About</a></li>
+              <li><span>-</span></li>
+              <li><a href="#skillPage" id="skillBtn">Skill</a></li>
+              <li><span>-<span></li>
+              <li><a href="#contactPage" id="contactBtn">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- about -->
+      <div class="about-wrapper" id="aboutPage">
+        <div class="container">
+          <h1 class="about-title">About</h1>
+          <div class="about">
+            <div class="about-left">
+              <h1 class="about-subtitle">Profile</h1>
+              <p　class="aboutComment">2018年3月に専門学校卒業後、地元の山口県へ帰省し音楽活動を行っていましたが、リモートワークで就業していた会社でHTMLやCSSといったプログラミング言語に携わる業務を行っており、エンジニアというクリエイティブな仕事にとても興味を抱くきっかけとなりました。その後プログラミングスキルを習得し、エンジニアとしてのキャリアを目指すため2019年8月よりプログラミング学習開始、HTML/CSS, JavaScript, jQuery,などの言語を学習し、現在はPHP言語やMySQLなどのデータベース、CMSのWordpressやBootstrapなどのフレームワークなども学習しております。</p>
+            </div>
+            <div class="about-right">
+              <br><br>
+              <p><b>学歴</b><br>専門学校ESPニュージカルアカデミー サウンドクリエイター科　卒業</p>
+              <p><b>言語</b><br>HTML / CSS / Javascript(jQuery) / PHP(学習中)</p>
+              <p><b>環境</b><br>MacOS</p>
+              <p><b>今後の目標</b><br>独自のWebサービスを開発・運用して、多くの方が楽しめるようなサイト作りに挑戦してみたいと思ってます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skill -->
+      <div class="skill-wrapper" id="skillPage">
+        <div class="container">
+          <h1 class="skill-title">Skill</h1>
+          <div class="skills">
+            <div class="skill">
+              <p class="skill-language">HTML</p>
+              <img src="images/html.png">
+              <p class="proficiency">習熟度：★★★★☆</p>
+            </div>
+            <div class="skill">
+              <p class="skill-language">CSS</p>
+              <img src="images/css.png">
+              <p class="proficiency">習熟度：★★★★☆</p>
+            </div>
+            <div class="skill">
+              <p class="skill-language">Javascript(jQuery)</p>
+              <img src="images/js.png">
+              <p class="proficiency">習熟度：★★★☆☆</p>
+            </div>
+            <div class="skill">
+              <p class="skill-language">PHP</p>
+              <img src="images/php.png">
+              <p class="proficiency">習熟度：★☆☆☆☆</p>
+            </div>
+          </div>
+          <div class="site-link">
+            <p><b>スキルレベル参考模写サイト：</b><a href="https://isara.life/">https://isara.life/</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <div class="contact-wrapper" id="contactPage">
+        <div class="container">
+          <h1 class="contact-title">Contact</h1>
+          <div class="contact">
+            <p>お気軽にお問い合わせくださいませ。</p>
+            <div class="access">
+              <a href="#"><i class="fab fa-twitter btn"></i></a>
+              <a href="#"><i class="fab fa-facebook btn"></i></a>
+              <a href="#"><i class="far fa-envelope btn"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <p>Copyright © 2019 All Rights Reserved By MatsudaYoshiki</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
