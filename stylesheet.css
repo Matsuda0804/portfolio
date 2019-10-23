@@ -1,0 +1,262 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  height:100%;
+}
+body{
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin:0 auto;
+  height:100%;
+}
+li{
+  list-style: none;
+}
+/* wrap */
+.wrap{
+  overflow:hidden;
+}
+/* container */
+.container{
+  width:100%;
+  max-width:1600px;
+}
+/* header */
+header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:800px;
+  background-image:url(../images/header-image.jpg);
+  background-position:50% 50%;
+  background-size:cover;
+  text-align:center;
+  font-size:0;
+  font-family:'Comic Sans MS';
+  letter-spacing:2px;
+}
+header h1{
+  font-size:36px;
+  color:#dcdcdc;
+  margin:0;
+  opacity:0.7;
+}
+header p{
+  font-size:20px;
+  color:#dcdcdc;
+  margin:0;
+  opacity:0.7;
+}
+/* menu */
+.menu-wrapper{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  height:80px;
+  background-color:#ed6d35;
+}
+.menu{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+}
+.menu li{
+  display:inline-block;
+  margin:0 100px;
+  letter-spacing:2px;
+  font-family:'Comic Sans MS';
+}
+.menu span{
+  font-size:26px;
+  color:#fff;
+}
+.menu a{
+  text-decoration:none;
+  background:linear-gradient(transparent 70%, #f08080 70%);
+  color:#fff;
+  font-size:26px;
+  cursor:pointer;
+}
+/* about */
+.about-wrapper{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+  height:500px;
+  background-color:#e4e4e4;
+  letter-spacing:2px;
+}
+.about-title{
+  display:inline-block;
+  font-size:36px;
+  font-family:'Comic Sans MS';
+  border-bottom:2px solid #000;
+  margin-top:50px;
+}
+.about{
+  display:flex;
+  justify-content:center;
+  text-align: left;
+  width:100%;
+}
+.about-left{
+  width:40%;
+  height:300px;
+}
+.about-subtitle{
+  font-size:26Px;
+}
+.about-right{
+  width:40%;
+  height:300px;
+  margin-left:100px;
+}
+/* skill */
+.skill-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background-image:url(../images/skill-image.jpg);
+  width:100%;
+  height:600px;
+  color:#000;
+  letter-spacing:2px;
+}
+.skill-title{
+  display:inline-block;
+  font-size:36px;
+  font-family:'Comic Sans MS';
+  border-bottom:2px solid #000;
+}
+.skills{
+  display:flex;
+  justify-content: center;
+}
+.skill{
+  display:inline-block;
+  width:280px;
+  height:280px;
+  padding:20px;
+  margin:0 50px;
+  background-color:rgba(255, 255, 255, 0.6);
+  border-radius:30% 10%;
+}
+.skill img{
+  width:100px;
+}
+.skill-language{
+  font-size:16px;
+  font-weight:bold;
+}
+.proficiency{
+  font-size:16px;
+}
+.site-link{
+  display:inline-block;
+  width:90%;
+  height:auto;
+  font-size:20px;
+  padding:5px;
+  margin-top:50px;
+  background-color:rgba(255, 255, 255, 0.6);
+  border-radius:40px;
+  font-family:'Comic Sans MS';
+}
+/* contact */
+.contact-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  width:100%;
+  height:280px;
+  background-color:#e4e4e4;
+}
+.contact-title{
+  display:inline-block;
+  font-size:36px;
+  font-family:'Comic Sans MS';
+  border-bottom:2px solid #000;
+}
+.contact{
+  width:50%;
+  text-align:center;
+  margin:0 auto;
+}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  font-size:30px;
+  color:#000;
+  margin:10px;
+}
+/* footer */
+footer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  width:100%;
+  height:100px;
+  background-color:#ed6d35;
+  font-family:'Comic Sans MS';
+  font-weight:bold;
+  color:#fff;
+}
+
+/* responsive */
+@media(max-width:1000px){
+  .menu li{
+    margin:0 30px;
+  }
+  .about-wrapper{
+    height:650px;
+  }
+  .about-right{
+    margin-left:50px;
+  }
+  .skill-wrapper{
+    height:900px;
+  }
+  .skills{
+    flex-wrap: wrap;
+  }
+  .skill{
+    margin-top:30px;
+  }
+}
+
+@media(max-width:600px){
+  .menu li{
+    margin:0;
+  }
+  .menu a{
+    font-size:20px;
+  }
+  .about-wrapper{
+    height:750px;
+  }
+  .about-left{
+    font-size:12px;
+  }
+  .about-subtitle{
+    font-size:20Px;
+  }
+  .about-right{
+    font-size:12px;
+    margin-left:20px;
+  }
+  .skill-wrapper{
+    height:1600px;
+  }
+  .contact{
+    width:100%;
+  }
+  footer{
+    font-size:12px;
+  }
+}
