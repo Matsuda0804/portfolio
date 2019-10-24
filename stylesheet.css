@@ -253,6 +253,9 @@ footer{
   .skill-wrapper{
     height:1600px;
   }
+  .site-link{
+    font-size:12px;
+  }
   .contact{
     width:100%;
   }
