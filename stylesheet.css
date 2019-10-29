@@ -28,7 +28,7 @@ header{
   align-items:center;
   width:100%;
   height:800px;
-  background-image:url("header-image.jpg");
+  background-image:url(header-image.jpg);
   background-position:50% 50%;
   background-size:cover;
   text-align:center;
@@ -85,7 +85,7 @@ header p{
   justify-content:center;
   text-align:center;
   width:100%;
-  height:500px;
+  height:680px;
   background-color:#e4e4e4;
   letter-spacing:2px;
 }
@@ -109,6 +109,10 @@ header p{
 .about-subtitle{
   font-size:26Px;
 }
+.about-left span{
+  color:#ff0000;
+  background:linear-gradient(transparent 70%, #f08080 90%);
+}
 .about-right{
   width:40%;
   height:300px;
@@ -120,7 +124,7 @@ header p{
   justify-content:center;
   align-items:center;
   text-align:center;
-  background-image:url("skill-image.jpg");
+  background-image:url(skill-image.jpg);
   width:100%;
   height:600px;
   color:#000;
@@ -141,15 +145,15 @@ header p{
   width:280px;
   height:280px;
   padding:20px;
-  margin:0 50px;
-  background-color:rgba(255, 255, 255, 0.6);
+  margin:0 20px;
+  background-color:rgba(255, 255, 255, 0.7);
   border-radius:30% 10%;
 }
 .skill img{
   width:100px;
 }
 .skill-language{
-  font-size:16px;
+  font-size:14px;
   font-weight:bold;
 }
 .proficiency{
@@ -162,7 +166,7 @@ header p{
   font-size:20px;
   padding:5px;
   margin-top:50px;
-  background-color:rgba(255, 255, 255, 0.6);
+  background-color:rgba(255, 255, 255, 0.7);
   border-radius:40px;
   font-family:'Comic Sans MS';
 }
@@ -206,60 +210,4 @@ footer{
   font-family:'Comic Sans MS';
   font-weight:bold;
   color:#fff;
-}
-
-/* responsive */
-@media(max-width:1000px){
-  .menu li{
-    margin:0 30px;
-  }
-  .about-wrapper{
-    height:650px;
-  }
-  .about-right{
-    margin-left:50px;
-  }
-  .skill-wrapper{
-    height:900px;
-  }
-  .skills{
-    flex-wrap: wrap;
-  }
-  .skill{
-    margin-top:30px;
-  }
-}
-
-@media(max-width:600px){
-  .menu li{
-    margin:0;
-  }
-  .menu a{
-    font-size:20px;
-  }
-  .about-wrapper{
-    height:750px;
-  }
-  .about-left{
-    font-size:12px;
-  }
-  .about-subtitle{
-    font-size:20Px;
-  }
-  .about-right{
-    font-size:12px;
-    margin-left:20px;
-  }
-  .skill-wrapper{
-    height:1600px;
-  }
-  .site-link{
-    font-size:12px;
-  }
-  .contact{
-    width:100%;
-  }
-  footer{
-    font-size:12px;
-  }
 }
