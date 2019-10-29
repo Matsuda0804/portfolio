@@ -4,22 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-    var aLocate = $('#aboutPage').offset().top;
-    var bLocate = $('#skillPage').offset().top;
-    var cLocate = $('#contactPage').offset().top;
-    $('#aboutBtn').click(function(){
-        $(window).scrollTop(aLocate);
-    });
-    $('#skillBtn').click(function(){
-        $(window).scrollTop(bLocate);
-    });
-    $('#contactBtn').click(function(){
-        $(window).scrollTop(cLocate);
+    $(function(){
+      $('a[href^="#"]').click(function() {
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+      });
     });
     </script>
     <title>portfolio.MatsudaYoshiki</title>
@@ -53,14 +51,15 @@
           <div class="about">
             <div class="about-left">
               <h1 class="about-subtitle">Profile</h1>
-              <p　class="aboutComment">2018年3月に専門学校卒業後、地元の山口県へ帰省し音楽活動を行っていましたが、リモートワークで就業していた会社でHTMLやCSSといったプログラミング言語に携わる業務を行っており、エンジニアというクリエイティブな仕事にとても興味を抱くきっかけとなりました。その後エンジニアとしてのキャリアを目指すため2019年8月よりプログラミング学習開始、HTML/CSS, JavaScript, jQuery,などの言語を学習し、現在はPHP言語やMySQLなどのデータベース、CMSのWordpressやBootstrapなどのフレームワークなども学習しております。</p>
+              <p　class="aboutComment">2018年3月に専門学校卒業後、地元の山口県へ帰省し音楽活動を行っていましたが、リモートワークで就業していた会社でHTMLやCSSといったプログラミング言語に携わる業務（HTML/CSS修正や追加等）を行っており、エンジニアというクリエイティブな仕事にとても興味を抱くきっかけとなりました。<br><br>その後プログラミングスキルを習得し、エンジニアとしてのキャリアを目指すため2019年8月よりプログラミング学習開始、HTML/CSS, JavaScript, jQuery,などの言語を学習し、現在はPHP言語やMySQLなどのデータベース、CMSのWordpressやBootstrapなどのフレームワークなども学習しております。<br><br>HTML/CSSはハンドコーディング可能です。Javasqript(jQuery)は基礎的なスムーススクロールやアコーディオンメニュからその他コピペ修正なども可能です。その他は基礎知識程度ですが常にスキルアップを目指して学習するポテンシャルは、かなり高いです。<br><b><span>コーディングレベルは「スキルレベル参考模写サイト」をご参考ください。</span></b></p>
             </div>
             <div class="about-right">
               <br><br>
-              <p><b>学歴</b><br>専門学校ESPニュージカルアカデミー サウンドクリエイター科　卒業</p>
-              <p><b>言語</b><br>HTML / CSS / Javascript(jQuery) / PHP(学習中)</p>
-              <p><b>環境</b><br>MacOS</p>
-              <p><b>今後の目標</b><br>独自のWebサービスを開発・運用して、多くの方が楽しめるようなサイト作りに挑戦してみたいと思ってます。</p>
+              <p><b>＊学歴</b><br>専門学校ESPニュージカルアカデミー サウンドクリエイター科　卒業</p>
+              <p><b>＊言語</b><br>HTML / CSS / Javascript(jQuery)</p>
+              <p><b>＊その他(CMS・システム・サービス等)</b><br>Git(Github) / illustrator / photoshop</p>
+              <p><b>＊学習中</b><br>PHP / MySQL / Wordpress / Sass / Bootstrap</p>
+              <p><b>＊実務経験</b><br>HTML/CSS(修正・追加業務※リモート) 1年<br>illustrator(DTPオペレータ経験※アルバイト) 1年</p>
             </div>
           </div>
         </div>
@@ -86,9 +85,14 @@
               <p class="proficiency">習熟度：★★★☆☆</p>
             </div>
             <div class="skill">
-              <p class="skill-language">PHP</p>
+              <p class="skill-language">PHP/MySQL</p>
               <img src="php.png">
               <p class="proficiency">習熟度：★☆☆☆☆</p>
+            </div>
+            <div class="skill">
+              <p class="skill-language">Git/illustrator/photoshop</p>
+              <img src="php.png">
+              <p class="proficiency">習熟度：★★☆☆☆</p>
             </div>
           </div>
           <div class="site-link">
