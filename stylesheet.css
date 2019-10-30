@@ -211,3 +211,57 @@ footer{
   font-weight:bold;
   color:#fff;
 }
+@media(max-width:1000px){
+  .menu li{
+    margin:0 30px;
+  }
+  .about-wrapper{
+    height:1000px;
+  }
+  .about-right{
+    margin-left:50px;
+  }
+  .skill-wrapper{
+    height:1250px;
+  }
+  .skills{
+    flex-wrap: wrap;
+  }
+  .skill{
+    margin-top:30px;
+  }
+}
+
+@media(max-width:600px){
+  .menu li{
+    margin:0;
+  }
+  .menu a{
+    font-size:20px;
+  }
+  .about-wrapper{
+    height:1100px;
+  }
+  .about-left{
+    font-size:12px;
+  }
+  .about-subtitle{
+    font-size:20Px;
+  }
+  .about-right{
+    font-size:12px;
+    margin-left:20px;
+  }
+  .skill-wrapper{
+    height:1800px;
+  }
+  .site-link{
+    font-size:12px;
+  }
+  .contact{
+    width:100%;
+  }
+  footer{
+    font-size:12px;
+  }
+}
