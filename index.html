@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- script code -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <!-- skills slide -->
+    <script>
+      $(function(){
+        $('.slider').slick({
+          autoplay:true,
+          autoplaySpeed:5000,
+          dots:true,
+          });
+        });
+    </script>
+    <script>
+      $(function(){
+        $('a[href^="#"]').click(function(){
+          var speed = 800;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+      });
+    </script>
+    <!-- skills slide end -->
+    <!-- script code end -->
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="wrap" id="index">
+      <!-- header start -->
+      <div class="container">
+        <header>
+          <div class="header" id="headerPage">
+            <div class="header_title">
+              <a href="index.html" alt="TopPageへ戻る">
+                <h1>Yoshiki Matsuda<span>- Engineer -</span></h1>
+              </a>
+            </div>
+            <nav>
+              <ul class="header_menu">
+                <li><a href="about.html" alt="about">About</a></li>
+                <li><a href="#skillsPage" alt="skill">Skills</a></li>
+                <li><a href="#" alt="contact">Contact</a></li>
+              </ul>
+            </nav>
+            <ul class="social_btn">
+              <li><a href="https://www.instagram.com/?hl=ja" alt="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" alt="twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://ja-jp.facebook.com/" alt="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+        </header>
+      </div>
+      <!-- header end -->
+      <!-- contents start -->
+      <!-- topPage -->
+    <div class="top_wrapper" id="topPage">
+      <div class="container">
+        <div class="top_message_pc">
+          <p>エンジニアは、場所に囚われない自由な仕事。
+            <br>そんな働き方だからこそ、楽しくできるんだと思います。
+            <br>私に少しだけ、「制作」のお仕事を任せてみませんか？
+          </p>
+        </div>
+      </div>
+    </div>
+      <!-- topPage End -->
+      <!-- aboutPage -->
+      <div class="container">
+        <div class="about_wrapper" id="aboutBtn">
+          <div class="about_title">
+            <h1>About</h1>
+          </div>
+          <a class="about_btn" href="about.html" alt="aboutBtn">About Click here</a>
+        </div>
+      </div>
+      <!-- aboutPage End -->
+      <!-- skillsPage -->
+      <div class="container">
+        <div class="skill_wrapper" id="skillsPage">
+          <div class="skill_title">
+            <h1>Skills</h1>
+          </div>
+          <ul class="slider">
+            <li>
+              <h4>HTML5/CSS3</h4>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <p>HTML5/CSS3にてデザインの意図を理解し、レスポンシブやJavascriptを使用した動的サイトなど、UI/UXを意識した様々なサイトコーディングを行えます。また既存サイトのコーディング改修なども行えます。</p>
+            </li>
+            <li>
+              <h4>JavaScript(jQuery)</h4>
+              <i class="fab fa-js-square"></i>
+              <p>スムーズスクロールやアコーディオンなどの一般的な動的処理や、プラグインなどを使用したスライドやアニメーションなどクリエイティビティ溢れるサイト構築を行うことができます。</p>
+            </li>
+            <li>
+              <h4>Design</h4>
+              <i class="far fa-images"></i>
+              <p>IllustratorやPhotoshopを使用しサイトデザインに適した画像の編集やリサイズを行えます。また、簡易的なポスターやアイコンの作成なども制作可能です。</p>
+            </li>
+            <li>
+              <h4>CMS</h4>
+              <i class="fab fa-wordpress"></i>
+              <p>WordpressやUmbracoなどのCMSを使用した更新性の高いサイトの改修や制作を行うことができます。簡易な静的サイトであればオリジナルテーマでの作成も可能です。</p>
+            </li>
+            <li>
+              <h4>Other</h4>
+              <i class="fas fa-laptop-code"></i>
+              <p>bootstrapやscssなどのフレームワークや拡張言語を使用しより効率的にサイト構築を行うことができます。また、GitHubなどを使用し効率よくプロジェクトを進めることも可能です。</p>
+            </li>
+            <li>
+              <h4>Communication</h4>
+              <i class="fas fa-comments"></i>
+              <p>ChatWorkやSkypeなどのBusinessに特化したコミュニケーションツールを使用し、リモートでの業務連絡や資料送付など、円滑にプロジェクトを遂行できます。また、Officeソフトを使用した資料やレポート作成なども可能です。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- skillsPage End -->
+      <!-- contactPage -->
+      <div class="contact_wrapper" id="contactPage">
+        <div class="container">
+          <div class="contact_title">
+            <h1>Contact</h1>
+          </div>
+          <ul class="social_btn">
+            <li><a href="mailto:yskxxxxxxxx@yahoo.co.jp" alt="mail"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.instagram.com/?hl=ja" alt="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" alt="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://ja-jp.facebook.com/" alt="facebook"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+          <p class="contact_message">お気軽にお問い合わせください。</p>
+          <br>
+          <p><span>※こちらのコンタクト先は現在ダミーです。</span></p>
+          <div class="to_top">
+            <a class="to_top_btn" href="#" alt="TopPageへ戻る"><i class="fas fa-angle-up"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- contact End -->
+      <!-- contents end -->
+      <!-- footer start -->
+      <footer>
+        <div class="container">
+          <div class="footer" id="footerPage">
+            <nav>
+              <ul class="footer_menu">
+                <li><a href="about.html" alt="about">About</a></li>
+                <li><a href="#skillsPage" alt="skill">Skills</a></li>
+                <li><a href="#" alt="contact">Contact</a></li>
+              </ul>
+            </nav>
+            <p>© Yoshiki Matsudas All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+  </body>
+</html>

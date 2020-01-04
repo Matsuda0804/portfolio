@@ -1,0 +1,450 @@
+@charset "utf-8";
+*{
+  box-sizing: border-box;
+}
+html{
+
+}
+body{
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  margin:0 auto;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  transition: 0.3s;
+  color:#696969;
+}
+
+/* wrap */
+.container{
+  width:100%;
+  max-width:1024px;
+  margin:0 auto;
+  color:#696969;
+}
+
+/* header */
+.header{
+  width:100%;
+  height:270px;
+  padding:50px 20px;
+  position:relative;
+}
+header ul li{
+  display:inline;
+  margin-left:30px;
+}
+header ul li a:hover{
+  text-decoration: underline;
+}
+header ul li a i{
+  font-size:26px;
+}
+header ul li a i:hover{
+  transition: 0.3s;
+  color:#a9a9a9;
+}
+header h1{
+  font-size:26px;
+}
+header span{
+  display:inline-block;
+  font-size:18px;
+  line-height:26px;
+  margin-left:10px;
+}
+.header .header_title{
+  font-family: 'Noteworthy',sans-serif;
+  letter-spacing:2px;
+  position:absolute;
+  top:70px;
+}
+.header .social_btn{
+  position:absolute;
+  top:70px;
+  right:30px;
+}
+.header .header_menu{
+  font-family: 'Noteworthy',sans-serif;
+  letter-spacing:2px;
+  position:absolute;
+  bottom:70px;
+  right:20px;
+}
+/* header end */
+/* top */
+.top_wrapper{
+  width:100%;
+  height:350px;
+  background-image:url(../img/top.jpg);
+  background-size:cover;
+  position:relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.top_wrapper:before{
+  background-size:cover;
+  background: inherit;
+  content: '';
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+}
+.top_message_pc p{
+  color:#696969;
+  line-height:40px;
+  letter-spacing:2px;
+  margin:120px 0 0 30px;
+}
+/* top end */
+
+/* about */
+.about_wrapper{
+  width:100%;
+  margin-bottom:150px;
+  text-align:center;
+}
+.about_wrapper .about_title{
+  font-size:36px;
+  font-family: 'Noteworthy',sans-serif;
+  letter-spacing:4px;
+  margin:50px 0;
+}
+/* about_btn */
+.about_wrapper a{
+  width:100px;
+  padding:18px 60px 18px 40px;
+  color:#fff;
+  font-size:14px;
+  letter-spacing: 1px;
+  background-color:#696969;
+  border-radius:25px;
+  position:relative;
+}
+.about_wrapper a:before{
+  content:"";
+  width:60px;
+  position:absolute;
+  top:50%;
+  right:-20px;
+  border-top:1px solid #000;
+}
+.about_wrapper a:after{
+  content:"";
+  height:10px;
+  position:absolute;
+  top:50%;
+  right:-16px;
+  margin-top:-9px;
+  border-left:2px solid #000;
+  transform: skewX(45deg);
+}
+.about_wrapper a:hover{
+  background-color:#a9a9a9;
+}
+/* about_btn end */
+/* about Page */
+.about_page{
+  width:100%;
+  margin:10px 40px;
+}
+.about_page .about_title{
+  font-size:36px;
+  font-family: 'Noteworthy',sans-serif;
+  letter-spacing:4px;
+  margin-bottom:70px;
+}
+.about_page p{
+  font-size:14px;
+  letter-spacing:1px;
+  line-height:20px;
+  margin-bottom:50px;
+}
+.about_page .socialMedia_ttl{
+  margin-bottom:5px;
+  color:#000;
+  text-decoration: underline;
+}
+.about_page .prof{
+  display:flex;
+  margin-bottom:50px;
+}
+.about_page .prof .prof_r{
+  width:100%;
+  padding-right:50px;
+}
+.about_page .prof .prof_l img{
+  width:150px;
+  margin-right:40px;
+}
+.about_page .prof .prof_r dl{
+  width:100%;
+  font-size:13px;
+  line-height:22px;
+  margin-bottom:20px;
+}
+.about_page .prof .prof_r dl dt{
+  width:20%;
+  float:left;
+  color:#000;
+}
+.about_page .prof .prof_r dl dt dd{
+  width:80%;
+  float:right;
+}
+/* about Page end */
+/* about end */
+
+/* skills */
+.skill_wrapper{
+  width:100%;
+  padding-bottom:100px;
+  text-align:center;
+}
+.skill_wrapper .skill_title{
+  margin:50px auto;
+}
+.skill_wrapper .skill_title h1{
+  font-size:36px;
+  font-family: 'Noteworthy',sans-serif;
+  letter-spacing:4px;
+}
+.slider{
+  margin: 50px auto;
+  width: 50%;
+}
+.slider h4{
+  font-size:18px;
+  font-weight:bold;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+  margin-bottom:20px;
+  letter-spacing:2px;
+}
+.slider p{
+  width:40%;
+  margin:10px auto 30px auto;
+  font-size:14px;
+  line-height:20px;
+  letter-spacing:2px;
+  text-align:left;
+}
+.slider li{
+  height: auto;
+  width: 100%;
+}
+.slider li i{
+  font-size:72px;
+  margin:0 10px 20px 10px;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+/* skills end */
+
+/* contact */
+.contact_wrapper{
+  width:100%;
+  padding-bottom:100px;
+  text-align:center;
+  position:relative;
+}
+.contact_title{
+  font-size:36px;
+  font-family: 'Noteworthy',sans-serif;
+  letter-spacing:4px;
+}
+.contact_wrapper ul{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:50px;
+  margin:50px 320px;
+}
+.contact_wrapper ul li a i{
+  font-size:26px;
+}
+.contact_wrapper ul li a i:hover{
+  transition: 0.3s;
+  color:#a9a9a9;
+}
+.contact_wrapper .contact_message{
+  font-size:14px;
+}
+.contact_wrapper span{
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  text-decoration: underline;
+  margin-bottom:30px;
+}
+.to_top{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+}
+.to_top a i{
+  font-size:30px;
+  text-decoration:overline;
+}
+.to_top a:hover{
+  color:#a9a9a9;
+}
+/* contact end */
+
+/* footer */
+.footer{
+  width:100%;
+  height:180px;
+  padding:50px 20px;
+  text-align:center;
+  position:relative;
+}
+.footer .footer_menu{
+  font-family: 'Noteworthy',sans-serif;
+  letter-spacing:2px;
+  position:absolute;
+  top:50px;
+  left:20px;
+}
+footer ul li{
+  display:inline;
+  margin-left:30px;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+}
+footer p{
+  position:absolute;
+  bottom:40px;
+  right:30px;
+  font-size:12px;
+}
+
+/* footer end */
+
+/* responsive */
+@media screen and (min-width:320px) and ( max-width:480px){
+/*　画面サイズが320pxから480pxまではここを読み込む　*/
+header h1{
+  font-size:20px;
+}
+header span{
+  font-size:14px;
+}
+header ul li a i{
+  font-size:20px;
+}
+.header .social_btn{
+  position:absolute;
+  top:140px;
+  right:30px;
+}
+.top_message_pc p{
+  line-height:28px;
+  letter-spacing:1px;
+  margin:140px 0 0 10px;
+  font-size:10px;
+}
+.about_page{
+  width:100%;
+  margin:10px 10px;
+}
+.about_page p{
+  font-size:12px;
+}
+.about_page .prof{
+  display:block;
+  text-align:center;
+}
+.about_page .socialMedia_ttl{
+  text-align:left;
+}
+.about_page .prof .prof_r{
+  padding-right:10px;
+}
+.about_page .prof .prof_r dl{
+  font-size:10px;
+  text-align:left;
+}
+.about_page .prof .prof_r dl dt{
+  width:30%;
+}
+.about_page .prof .prof_r dl dt dd{
+  width:70%;
+}
+.about_page .prof .prof_l img{
+  margin-bottom:30px;
+}
+.slider{
+  margin: 50px auto;
+  width: 85%;
+}
+.slider p{
+  width:80%;
+}
+.contact_wrapper ul{
+  margin:50px 100px;
+}
+}
+@media screen and (min-width:480px) and ( max-width:768px){
+/*　画面サイズが480pxから768pxまではここを読み込む　*/
+.header .social_btn{
+  position:absolute;
+  top:120px;
+  right:30px;
+}
+.top_message_pc p{
+  font-size:14px;
+}
+.slider{
+  margin: 50px auto;
+  width: 80%;
+}
+.slider p{
+  width:60%;
+}
+.about_page p{
+  font-size:12px;
+}
+.about_page .prof{
+  display:block;
+  text-align:center;
+}
+.about_page .socialMedia_ttl{
+  text-align:left;
+}
+.about_page .prof .prof_r{
+  padding-right:20px;
+}
+.about_page .prof .prof_r dl{
+  font-size:12px;
+  text-align:left;
+}
+.about_page .prof .prof_r dl dt{
+  width:20%;
+}
+.about_page .prof .prof_r dl dt dd{
+  width:80%;
+}
+.about_page .prof .prof_l img{
+  margin-bottom:30px;
+}
+.contact_wrapper ul{
+  margin:50px 150px;
+}
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+.contact_wrapper ul{
+  margin:50px 300px;
+}
+}
+/* responsive end */

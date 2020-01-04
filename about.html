@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- script code -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- slick -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="slick/slick.js"></script>
+  <script>
+    $(function(){
+      $('a[href^="#"]').click(function(){
+        var speed = 800;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+  </script>
+  <!-- script code end -->
+  <title>About</title>
+</head>
+  <body>
+    <div class="wrap" id="index">
+      <!-- header start -->
+      <div class="container">
+        <header>
+          <div class="header" id="headerPage">
+            <div class="header_title">
+              <a href="index.html" alt="TopPageへ戻る">
+                <h1>Yoshiki Matsuda<span>- Engineer -</span></h1>
+              </a>
+            </div>
+            <nav>
+              <ul class="header_menu">
+                <li><a href="about.html" alt="about">About</a></li>
+                <li><a href="index.html" alt="skill">Skills</a></li>
+                <li><a href="index.html" alt="contact">Contact</a></li>
+              </ul>
+            </nav>
+            <ul class="social_btn">
+              <li><a href="https://www.instagram.com/?hl=ja" alt="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" alt="twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://ja-jp.facebook.com/" alt="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+        </header>
+      </div>
+      <!-- header end -->
+      <!-- contents start -->
+      <!-- aboutPage -->
+      <div class="container">
+        <div class="about_page" id="aboutPage">
+          <div class="about_title">
+            <h1>About</h1>
+          </div>
+          <p>都内にてWebエンジニアをしております。
+          <br>現在はグラフィック企業のWeb制作チームで業務に従事。
+          <br>フロントエンドからWebマーケティングなど幅広い業務を担当してます。
+          </p>
+          <div class="prof">
+            <div class="prof_l">
+              <img src="img/prof.png" alt="aboutImage">
+            </div>
+            <div class="prof_r">
+              <dl class="prof_contents_l">
+                <dt>名前：</dt>
+                <dd>松田 誉志貴　- Matsuda Yoshiki -</dd>
+                <dt>所在地：</dt>
+                <dd>都内近郊</dd>
+                <dt>お問い合わせ：</dt>
+                <dd>yskxxxxxxxx@yahoo.co.jp</dd>
+                <dt>業務範囲：</dt>
+                <dd>コーディング（静的/動的/レスポンシブ）、CMS修正、Webマーケティングetc...</dd>
+              </dl>
+              <p class="socialMedia_ttl">SocialMedia</p>
+              <dl class="prof_contents_l">
+                <dt>Twitter：</dt>
+                <dd>Coming Soon ...</dd>
+                <dt>Instagram：</dt>
+                <dd>Coming Soon ...</dd>
+                <dt>Facebook：</dt>
+                <dd>Coming Soon ...</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="to_top">
+            <a class="to_top_btn" href="index.html" alt="TopPageへ戻る"><i class="fas fa-angle-up"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- aboutPage End -->
+      <!-- contents end -->
+      <!-- footer start -->
+      <footer>
+        <div class="container">
+          <div class="footer" id="footerPage">
+            <nav>
+              <ul class="footer_menu">
+                <li><a href="about.html" alt="about">About</a></li>
+                <li><a href="index.html" alt="skill">Skills</a></li>
+                <li><a href="index.html" alt="contact">Contact</a></li>
+              </ul>
+            </nav>
+            <p>© Yoshiki Matsudas All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+  </body>
+</html>
