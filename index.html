@@ -1,175 +1,424 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <!-- script code -->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- slick -->
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="slick/slick.js"></script>
-    <!-- skills slide -->
-    <script>
-      $(function(){
-        $('.slider').slick({
-          autoplay:true,
-          autoplaySpeed:5000,
-          dots:true,
-          });
-        });
-    </script>
-    <script>
-      $(function(){
-        $('a[href^="#"]').click(function(){
-          var speed = 800;
-          var href= $(this).attr("href");
-          var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top;
-          $("html, body").animate({scrollTop:position}, speed, "swing");
-          return false;
-        });
-      });
-    </script>
-    <!-- skills slide end -->
-    <!-- script code end -->
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div class="wrap" id="index">
-      <!-- header start -->
-      <div class="container">
-        <header>
-          <div class="header" id="headerPage">
-            <div class="header_title">
-              <a href="index.html" alt="TopPageへ戻る">
-                <h1>Yoshiki Matsuda<span>- Engineer -</span></h1>
-              </a>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='portfolio'>
+  <meta property='og:title' content='portfolio|YoshikiMatsuda'>
+  <meta property='og:description' content='ポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="ポートフォリオサイトです。" />
+  <title>portfolio|YoshikiMatsuda</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- .gnav -->
+    <nav class="gnav" class="fixed">
+      <ul class="gnav-list">
+        <li class="gnav-item"><a class="gnav-link" href="#works-section">WORKS</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- /.gnav -->
+
+    <!-- .header -->
+    <header class="header">
+      <h1 class="logo rainbow">
+        <div class="logo-title">YOSHIKI MATSUDA</div>
+        <div class="logo-subtitle">WEB Designer</div>
+      </h1>
+    </header>
+    <!-- /.header -->
+
+    <main class="content">
+		
+     <!-- .about-section -->
+      <section class="about-section section" id="about-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">ABOUT</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              WEBデザイナー、マークアップエンジニアとして都内でWEB制作業務を主に行なっています。<br>最近はYouTubeプロジェクトメンバーとして、チャンネルのサムネイル制作なども行なっています。
+            </p>
+          </div>
+          <div class="section-body about">
+            <div class="about-item">
+              <div class="about-image-wrapper">
+                <img class="about-image lazyload fadein" data-src="img/about/profile.jpg" alt="">
+              </div>
+              <div class="about-body">
+                <ul>
+				  <li>名前：松田&nbsp;誉志貴（Matsuda&nbsp;Yoshiki）</li>
+				  <li>生年月日：1992/08/04</li>
+				  <li>担当：Design&nbsp;/&nbsp;Cording&nbsp;/&nbsp;Wordpress&nbsp;/&nbsp;Direction</li>
+				  <li>居住地：東京・神奈川近郊</li>
+				  <li>メール：gerick.ysk@gmail.com</li>
+				</ul>
+              </div>
             </div>
-            <nav>
-              <ul class="header_menu">
-                <li><a href="about.html" alt="about">About</a></li>
-                <li><a href="#skillsPage" alt="skill">Skills</a></li>
-                <li><a href="#" alt="contact">Contact</a></li>
-              </ul>
-            </nav>
-            <ul class="social_btn">
-              <li><a href="https://www.instagram.com/?hl=ja" alt="instagram"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://twitter.com/" alt="twitter"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://ja-jp.facebook.com/" alt="facebook"><i class="fab fa-facebook-f"></i></a></li>
+          </div>
+        </div>
+      </section>
+      <!-- /.about-section -->
+		
+      <!-- .works-section -->
+      <section class="works-section section" id="works-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">WORKS</h2>
+          </div>
+          <div class="section-lead">
+            <p>Web制作の実績になります。フルスタックで対応、サイト改修などの実績も含んでおります。<br>※以下サイト以外にも多数実績がございます。</p>
+          </div>
+          <div class="section-body works">
+            <div class="works-list js-my-gallery">
+              <figure class="works-item">
+                <a href="img/works/miraidrive.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/works/miraidrive.jpg" data-src="img/works/miraidrive.jpg"
+                    alt="MIRAI DRIVE PROJECT" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">MIRAI DRIVE PROJECT / サイト改修<span>※子ページ含む</span></div>
+                  <div class="works-text">Design / Coding(Responsive)</div>
+                  <div class="works-url"><a class="works-url-link" href="https://www.axa-direct.co.jp/miraidrive/" target="_blank">SitePage</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/welnavi.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/works/welnavi.jpg"
+                    data-src="img/works/welnavi.jpg" alt="ウェルナビ" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">ウェルナビ / レシピページ制作</div>
+                  <div class="works-text">Design / Coding(Responsive) </div>
+                  <div class="works-url"><a class="works-url-link" href="https://www.nisshin.com/welnavi/labo/recipe/" target="_blank">SitePage</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/gateway.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/works/gateway.jpg" data-src="img/works/gateway.jpg"
+                    alt="gateway" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">GATEWAY COMPUTER / CMSページ制作</div>
+                  <div class="works-text">Wordpress</div>
+                  <div class="works-url"><a class="works-url-link" href="https://www.gateway.co.jp/ja/" target="_blank">SitePage</a>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/protolabs.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/works/protolabs.jpg" data-src="img/works/protolabs.jpg"
+                    alt="プロトラブズ" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">プロトラブズ / CMSページ制作</div>
+                  <div class="works-text">Design / Cording(Responsive) / Umbraco / バナー制作</div>
+                  <div class="works-url"><a class="works-url-link" href="https://www.protolabs.co.jp/" target="_blank">SitePage</a>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/lp_01.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/lp_01.jpg"
+                    alt="LPサイト01" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">LP / ページ制作</div>
+                  <div class="works-text">Design / Cording(Responsive)</div>
+                  <div class="works-url"><a class="works-url-link" href="https://www.moriaholdings.com/lp/buppanseminar/facebook02/business_s/" target="_blank">SitePage</a>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/lp_02.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/works/lp_02.jpg" data-src="img/works/lp_02.jpg"
+                    alt="LPサイト02" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">LP / ページ制作</div>
+                  <div class="works-text">Design / Cording(Responsive)</div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.works-section -->
+
+      <!-- .skill-section -->
+      <section class="skill-section section" id="skill-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">SKILL</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              基本的なスキルから応用まで幅広いWEB制作スキルを扱えます。<br>お客様の要望に合わせ、きちんと効果のあるサイト制作を行うことが可能です。
+            </p>
+          </div>
+          <div class="section-body skill">
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/code.svg" alt="コードアイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">HTML5</h3>
+                  <div class="skill-rating rating">
+                  <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    SEOを意識し、更新や改修作業をしやすいシンプルなコーディングを行います。構文チェックなどを行い、HTML5で今の時代に合う最先端の構築が可能です。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/code.svg" alt="コードアイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">CSS3</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    モバイルファーストを意識したレスポンシブ（スマホ）対応はもちろん、CSSでの簡単なアニメーションや動的な装飾を行う時ことで、UIを意識したデザインを行います。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/code.svg" alt="コードアイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">JavaScript / jQuery</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    現代のサイト制作によくある動作（スクロール、ドロップダウン、タブ切り替え、スライド、パララックスなど）を使用しあらゆる動的なサイト制作が可能です。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/code.svg" alt="コードアイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">PHP</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                  <p>
+                    簡単なフォーム作成やその他基礎知識および、Wordpressカスタマイズに必要なスキルがございます。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/wordpress.svg" alt="Wordpressアイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">WordPress</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    静的サイトのWordPress化、テーマのカスタマイズやオリジナルテーマの作成が行えます。更新頻度の高いサイトにオススメです。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/photo.svg" alt="カメラアイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">Photoshop</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    MVやKV、バナーや広告サムネイルの制作、簡単なグラフィック技術を使用しデザインに凝った画像の編集が可能です。最近はYouTubeのサムネイル制作なども行なっています。</p>
+                </div>
+              </div>
+			  <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/illust.svg" alt="鉛筆アイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">Illustrator</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    サイトに使用する簡単な素材、ワンポイント画像、要望に沿った簡易的な企業ロゴなど制作致します。DTPオペレーターとしての経験もあるため名刺作成などの簡単な紙媒体デザインも可能です。</p>
+                </div>
+              </div>
+			  <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/photo.svg" alt="カメラアイコン">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">XD</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    デザインの基となるワイヤーフレームやデザインカンプ、プロトタイプの制作に使用します。シンプルなデザインのサイトやLPであればXDを使用してより効率的にサイトデザインを制作することが可能です。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.skill-section -->
+
+      <!-- .contact-section -->
+      <section class="contact-section section" id="contact-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">CONTACT</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              お問い合わせは<br class="sp-only">以下のフォームかSNSでご連絡ください。
+            </p>
+			 <p><a href="https://forms.gle/6TLB8oNTht2HrmeX9">お問い合わせフォームはこちら</a></p>
+          </div>
+		  <!--<div class="Form">
+			<div class="Form-Item">
+			  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>会社名</p>
+			  <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+			</div>
+			<div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+			</div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+              <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+              <textarea class="Form-Item-Textarea"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する">
+          </div>-->
+          <div class="section-body contact">
+            <ul class="contact-list">
+              <li class="contact-item">
+                <a class="contact-link" href="https://twitter.com/" target="_blank"><img class="contact-image"
+                    src="img/contact/icon_tw.png" alt=""></a>
+              </li>
+              <li class="contact-item">
+                <a class="contact-link" href="https://www.facebook.com/" target="_blank"><img class="contact-image"
+                    src="img/contact/icon_fb.png" alt=""></a>
+              </li>
             </ul>
+            <div class="contact-text">※SNSのDMから問い合わせる場合はこちら</div>
           </div>
-        </header>
-      </div>
-      <!-- header end -->
-      <!-- contents start -->
-      <!-- topPage -->
-    <div class="top_wrapper" id="topPage">
-      <div class="container">
-        <div class="top_message_pc">
-          <p>エンジニアは、場所に囚われない自由な仕事。
-            <br>そんな働き方だからこそ、楽しくできるんだと思います。
-            <br>私に少しだけ、「制作」のお仕事を任せてみませんか？
-          </p>
         </div>
+      </section>
+      <!-- /.contact-section -->
+
+    </main>
+
+    <!-- .footer -->
+    <footer class="footer">
+      <p id="PageTop" class="page-top"><i class="fas fa-angle-double-up"></i></p>
+      <div class="inner">
+        <div class="copyright">Copyright&copy;YOSHIKI MATSUDA. All Rights Reserved.</div>
       </div>
+    </footer>
+    <!-- /.footer -->
+
+  </div>
+
+  <!-- 下記はPhotoswipeプラグイン用 -->
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+       It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
     </div>
-      <!-- topPage End -->
-      <!-- aboutPage -->
-      <div class="container">
-        <div class="about_wrapper" id="aboutBtn">
-          <div class="about_title">
-            <h1>About</h1>
-          </div>
-          <a class="about_btn" href="about.html" alt="aboutBtn">About Click here</a>
-        </div>
-      </div>
-      <!-- aboutPage End -->
-      <!-- skillsPage -->
-      <div class="container">
-        <div class="skill_wrapper" id="skillsPage">
-          <div class="skill_title">
-            <h1>Skills</h1>
-          </div>
-          <ul class="slider">
-            <li>
-              <h4>HTML5/CSS3</h4>
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <p>HTML5/CSS3にてデザインの意図を理解し、レスポンシブやJavascriptを使用した動的サイトなど、UI/UXを意識した様々なサイトコーディングを行えます。また既存サイトのコーディング改修なども行えます。</p>
-            </li>
-            <li>
-              <h4>JavaScript(jQuery)</h4>
-              <i class="fab fa-js-square"></i>
-              <p>スムーズスクロールやアコーディオンなどの一般的な動的処理や、プラグインなどを使用したスライドやアニメーションなどクリエイティビティ溢れるサイト構築を行うことができます。</p>
-            </li>
-            <li>
-              <h4>Design</h4>
-              <i class="far fa-images"></i>
-              <p>IllustratorやPhotoshopを使用しサイトデザインに適した画像の編集やリサイズを行えます。また、簡易的なポスターやアイコンの作成なども制作可能です。</p>
-            </li>
-            <li>
-              <h4>CMS</h4>
-              <i class="fab fa-wordpress"></i>
-              <p>WordpressやUmbracoなどのCMSを使用した更新性の高いサイトの改修や制作を行うことができます。簡易な静的サイトであればオリジナルテーマでの作成も可能です。</p>
-            </li>
-            <li>
-              <h4>Other</h4>
-              <i class="fas fa-laptop-code"></i>
-              <p>bootstrapやscssなどのフレームワークや拡張言語を使用しより効率的にサイト構築を行うことができます。また、GitHubなどを使用し効率よくプロジェクトを進めることも可能です。</p>
-            </li>
-            <li>
-              <h4>Communication</h4>
-              <i class="fas fa-comments"></i>
-              <p>ChatWorkやSkypeなどのBusinessに特化したコミュニケーションツールを使用し、リモートでの業務連絡や資料送付など、円滑にプロジェクトを遂行できます。また、Officeソフトを使用した資料やレポート作成なども可能です。</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- skillsPage End -->
-      <!-- contactPage -->
-      <div class="contact_wrapper" id="contactPage">
-        <div class="container">
-          <div class="contact_title">
-            <h1>Contact</h1>
-          </div>
-          <ul class="social_btn">
-            <li><a href="mailto:yskxxxxxxxx@yahoo.co.jp" alt="mail"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="https://www.instagram.com/?hl=ja" alt="instagram"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com/" alt="twitter"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://ja-jp.facebook.com/" alt="facebook"><i class="fab fa-facebook-f"></i></a></li>
-          </ul>
-          <p class="contact_message">お気軽にお問い合わせください。</p>
-          <br>
-          <p><span>※こちらのコンタクト先は現在ダミーです。</span></p>
-          <div class="to_top">
-            <a class="to_top_btn" href="#" alt="TopPageへ戻る"><i class="fas fa-angle-up"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- contact End -->
-      <!-- contents end -->
-      <!-- footer start -->
-      <footer>
-        <div class="container">
-          <div class="footer" id="footerPage">
-            <nav>
-              <ul class="footer_menu">
-                <li><a href="about.html" alt="about">About</a></li>
-                <li><a href="#skillsPage" alt="skill">Skills</a></li>
-                <li><a href="#" alt="contact">Contact</a></li>
-              </ul>
-            </nav>
-            <p>© Yoshiki Matsudas All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-      <!-- footer end -->
-    </div>
-  </body>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-setup.js"></script>
+  <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
 </html>
